@@ -1,0 +1,14 @@
+Model Information:
+* title:	Drossel
+* source:	https://sketchfab.com/3d-models/drossel-ae7e6f1beb9942ebaa788ebce914f30b
+* author:	Oddsome (https://sketchfab.com/Oddsome)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Drossel" (https://sketchfab.com/3d-models/drossel-ae7e6f1beb9942ebaa788ebce914f30b) by Oddsome (https://sketchfab.com/Oddsome) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+
+"Drossel" (https://skfb.ly/pyx6Y) by Oddsome is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
