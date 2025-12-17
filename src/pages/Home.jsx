@@ -13,8 +13,8 @@ export default function Home() {
 
   return (
     <div>
-      {/* HERO */}
-      <section id="hero" className="hero hero--home">
+      {/* HERO with 3D Robot */}
+      <section className="hero hero--home">
         <div className="hero__bgGlow" />
         <div className="container hero__grid">
           <div className="hero__left" data-reveal>
@@ -67,7 +67,7 @@ export default function Home() {
       </div>
 
       {/* Stats strip */}
-      <section id="stats" className="section section--tight">
+      <section className="section section--tight">
         <div className="container">
           <div className="glassStrip" data-reveal>
             <div>
@@ -87,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* WHAT INIKOLA DOES */}
-      <section id="capabilities" className="section">
+      <section className="section">
         <div className="container">
           <div className="sectionHead" data-reveal>
             <h2>What INIKOLA Does</h2>
@@ -127,7 +127,7 @@ export default function Home() {
       </section>
 
       {/* Josh-like: sticky scrollytelling */}
-      <section id="scrolly" className="section section--alt">
+      <section className="section section--alt">
         <div className="container">
           <div className="sectionHead" data-reveal>
             <h2>Experience-led automation</h2>
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <section id="cta" className="section">
+      <section className="section">
         <div className="container">
           <div className="contactStrip" data-reveal>
             <div>
