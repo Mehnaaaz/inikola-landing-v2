@@ -1,0 +1,8 @@
+Model Information:
+* title:	Teal
+* source:	https://sketchfab.com/3d-models/teal-4186aea3b40f460a854c7c90670f01e3
+* author:	Lagst (https://sketchfab.com/Lagst)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
