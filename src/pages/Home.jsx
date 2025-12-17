@@ -13,13 +13,8 @@ export default function Home() {
 
   return (
     <div>
-<<<<<<< HEAD
-      {/* HERO with 3D Robot */}
-      <section className="hero hero--home">
-=======
       {/* HERO */}
       <section id="hero" className="hero hero--home">
->>>>>>> cae720e0d89a9f21b98b4f2a876eda172b331141
         <div className="hero__bgGlow" />
         <div className="container hero__grid">
           <div className="hero__left" data-reveal>
