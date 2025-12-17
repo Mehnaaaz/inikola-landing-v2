@@ -3,14 +3,23 @@ import useReveal from "../components/useReveal.js";
 import Marquee from "../components/Marquee.jsx";
 import StatsRow from "../components/StatsRow.jsx";
 import FAQ from "../components/FAQ.jsx";
+import Interactive3DRobot from "../components/Interactive3DRobot.jsx";
 
 export default function Home() {
   useReveal();
 
+  // Spline 3D Robot Scene URL
+  const ROBOT_SCENE_URL = "https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode";
+
   return (
     <div>
+<<<<<<< HEAD
+      {/* HERO with 3D Robot */}
+      <section className="hero hero--home">
+=======
       {/* HERO */}
       <section id="hero" className="hero hero--home">
+>>>>>>> cae720e0d89a9f21b98b4f2a876eda172b331141
         <div className="hero__bgGlow" />
         <div className="container hero__grid">
           <div className="hero__left" data-reveal>
@@ -22,7 +31,7 @@ export default function Home() {
             </h1>
             <p className="hero__subtitle">
               AI-powered automation solutions designed for modern homes, enterprises,
-              and smart living spaces.
+              and smart living spaces with intelligent robotics integration.
             </p>
 
             <div className="hero__ctaRow">
@@ -43,36 +52,8 @@ export default function Home() {
           </div>
 
           <div className="hero__right" data-reveal>
-            <div className="deviceCard">
-              <div className="deviceCard__top">
-                <div className="deviceDot" />
-                <div className="deviceDot" />
-                <div className="deviceDot" />
-              </div>
-
-              <div className="deviceCard__body">
-                <div className="deviceMock">
-                  <div className="deviceMock__ring" />
-                  <div className="deviceMock__ring deviceMock__ring--2" />
-                  <div className="deviceMock__ring deviceMock__ring--3" />
-                  <div className="deviceMock__core" />
-                </div>
-
-                <div className="deviceCard__text">
-                  <h3>Smart Home Console</h3>
-                  <p>
-                    A clean, connected interface for lighting, climate, security, and scenes —
-                    designed to feel effortless.
-                  </p>
-                </div>
-              </div>
-
-              <div className="deviceCard__footer">
-                <span>Instant Scenes</span>
-                <span>Room-aware</span>
-                <span>Future-ready</span>
-              </div>
-            </div>
+            {/* 3D Interactive Robot */}
+            <Interactive3DRobot scene={ROBOT_SCENE_URL} />
           </div>
         </div>
       </section>
@@ -218,7 +199,7 @@ export default function Home() {
               { q: "Is INIKOLA only for home automation?", a: "Yes — INIKOLA is the home automation brand. Ventures are independent and shown only on the Ventures page." },
               { q: "Does it work without internet?", a: "Core actions can run locally (edge-first). Cloud is optional for remote access, analytics, and updates." },
               { q: "Can builders deploy this at scale?", a: "Yes. The architecture supports room-by-room modular deployment for apartments, hotels, and commercial spaces." },
-              { q: "How do we request a demo?", a: "Use the Request Demo CTA. We’ll replace the contact form wiring with your preferred backend/email flow." }
+              { q: "How do we request a demo?", a: "Use the Request Demo CTA. We'll replace the contact form wiring with your preferred backend/email flow." }
             ]} />
           </div>
         </div>
@@ -229,7 +210,7 @@ export default function Home() {
         <div className="container">
           <div className="contactStrip" data-reveal>
             <div>
-              <h3>Let’s Automate Smarter Spaces</h3>
+              <h3>Let's Automate Smarter Spaces</h3>
               <p className="muted">
                 Talk to INIKOLA for demos, partnerships, and enterprise deployments.
               </p>
