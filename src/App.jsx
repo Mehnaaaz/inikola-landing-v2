@@ -9,10 +9,12 @@ import Company from "./pages/Company.jsx";
 import Resources from "./pages/Resources.jsx";
 import Careers from "./pages/Careers.jsx";
 import Contact from "./pages/Contact.jsx";
+import RobotCanvas from "./pages/RobotCanvas";
 
 export default function App() {
   return (
     <BrowserRouter>
+    <RobotCanvas />
       <Routes>
         <Route element={<SiteLayout />}>
           <Route path="/" element={<Home />} />
