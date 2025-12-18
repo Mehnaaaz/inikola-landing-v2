@@ -586,7 +586,20 @@ a{ color: inherit; text-decoration: none; }
   min-height: 520px;
 }
 
-/* Robot container - VISIBLE with high z-index */
+/* ====================================
+   3D ROBOT COMPONENT - COMPLETE CSS
+   Add this to src/styles/globals.css
+   ==================================== */
+
+/* Wrapper - main container */
+.robot3d-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+}
+
+/* Robot container - the 3D scene itself */
 .robot3d-container{
   position: absolute;
   inset: 0;
@@ -597,33 +610,40 @@ a{ color: inherit; text-decoration: none; }
   z-index: 10;
 }
 
+/* Loaded state - fade in */
 .robot3d-container.robot3d-loaded{
   opacity: 1;
 }
 
-/* Canvas - robot stays visible */
+/* Canvas - the actual 3D render */
 .robot3d-container canvas{
   width: 100% !important;
   height: 100% !important;
   display: block;
 }
 
-/* ONLY hide links - NOTHING ELSE */
+/* Hide Spline badge - all methods */
 .robot3d-wrapper a,
-.robot3d-container a{
+.robot3d-container a,
+.robot3d-wrapper a[href*="spline"],
+.robot3d-container a[href*="spline"]{
   display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
+  pointer-events: none !important;
 }
 
-/* Loading state */
+/* Loading spinner */
 .loading-3d{
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 8;
+  background: transparent;
 }
 
 .spinner-3d{
@@ -670,7 +690,7 @@ a{ color: inherit; text-decoration: none; }
   z-index: 9;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 1020px){
   .robot3d-wrapper{
     min-height: 420px;
@@ -683,4 +703,3 @@ a{ color: inherit; text-decoration: none; }
   }
 }
 
-/* NO OVERLAYS, NO GRADIENTS - ROBOT STAYS VISIBLE! */

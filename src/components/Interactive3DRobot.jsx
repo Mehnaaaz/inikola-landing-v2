@@ -14,27 +14,28 @@ export default function Interactive3DRobot({ scene }) {
     setHasError(true);
   };
 
-  // Simple badge hiding - just find links and hide them
+  // Hide Spline badge after load
   useEffect(() => {
     if (isLoaded) {
-      const hideSplineBadge = () => {
-        // Find all links on the page
+      const hideBadge = () => {
+        // Find and hide all Spline links
         const allLinks = document.querySelectorAll('a');
         allLinks.forEach(link => {
           const href = link.href || '';
           const text = link.textContent || '';
           
-          // If it's a Spline link, hide it
           if (href.includes('spline') || text.toLowerCase().includes('spline') || text.toLowerCase().includes('built with')) {
             link.style.display = 'none';
+            link.style.opacity = '0';
+            link.style.visibility = 'hidden';
           }
         });
       };
 
-      // Run a few times to catch the badge
-      setTimeout(hideSplineBadge, 500);
-      setTimeout(hideSplineBadge, 1000);
-      setTimeout(hideSplineBadge, 2000);
+      // Run multiple times to catch badge
+      setTimeout(hideBadge, 500);
+      setTimeout(hideBadge, 1000);
+      setTimeout(hideBadge, 2000);
     }
   }, [isLoaded]);
 
@@ -47,7 +48,7 @@ export default function Interactive3DRobot({ scene }) {
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l2-2.647z"></path>
             </svg>
-            <p>Loading Interactive 3D Robot...</p>
+            <p>Loading 3D Robot...</p>
           </div>
         </div>
       )}

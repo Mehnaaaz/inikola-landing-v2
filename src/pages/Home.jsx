@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import useReveal from "../components/useReveal.js";
-import Marquee from "../components/Marquee.jsx";
+// import Marquee from "../components/Marquee.jsx";
 import StatsRow from "../components/StatsRow.jsx";
 import FAQ from "../components/FAQ.jsx";
 import Interactive3DRobot from "../components/Interactive3DRobot.jsx";
@@ -8,8 +8,8 @@ import Interactive3DRobot from "../components/Interactive3DRobot.jsx";
 export default function Home() {
   useReveal();
 
-  // Spline 3D Robot Scene URL
-  const ROBOT_SCENE_URL = "https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode";
+  // Your new Spline 3D robot scene
+  const ROBOT_SCENE_URL = "https://prod.spline.design/d8NyUiOriunOZRpD/scene.splinecode";
 
   return (
     <div>
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Josh-like: moving credibility marquee */}
+      {/* Josh-like: moving credibility marquee
       <div className="container" data-reveal>
         <Marquee items={[
           "Trusted by innovators",
@@ -64,7 +64,7 @@ export default function Home() {
           "Enterprise-grade security",
           "Edge-first reliability"
         ]} />
-      </div>
+      </div> */}
 
       {/* Stats strip */}
       <section className="section section--tight">
